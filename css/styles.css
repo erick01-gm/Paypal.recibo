@@ -1,0 +1,71 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;  
+    background: #1c56a8;
+}
+.contenedor{
+    background: #1c56a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.subcontenedor{
+    background: #fff;
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+.contenido{
+   /* background:#229799;*/
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+}
+.icon{
+    margin-right: 10px;
+}
+.action{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.action button{
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.descargar{
+    background: #0F67B1;
+    color: #fff;
+}
+.descargar:hover{
+    background: #2186d8;
+}
+.volver{
+    background: #fff
+}
+.volver:hover{
+    background: #eee;
+}
+
+@media all and (max-width: 655px){
+    .subcontenedor{
+        width: 400px;
+    }
+    .action{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 470px){
+    .subcontenedor{
+        width: 300px;
+    }
+}
+
